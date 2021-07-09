@@ -1,0 +1,24 @@
+<label for="username">ID</label>
+<input type="text" id="t1" [(ngModel)]="userobj.ID">
+<label for="username">Username</label>
+<input type="text" id="t1" [(ngModel)]="userobj.Name">
+
+<label for="username">Class</label>
+<input type="text" id="t2" [(ngModel)]="userobj.Class">
+
+<button (click)="Add()">Submit</button>
+<button (click)="delete()">Delete</button>
+<br>
+<table class="table" width="100%" border="1">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Class</td>
+    </tr>
+    <tr *ngFor="let user of users">
+        <td>{{user.ID}}</td>
+        <td>{{user.Name}}</td>
+        <td>{{user.Class}}</td>
+    </tr>
+</table>
+

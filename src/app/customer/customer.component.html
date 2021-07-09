@@ -1,0 +1,24 @@
+<p>customer works!</p>
+<label> Customer Name</label>
+<input type="text" name="custName" id="custName" [(ngModel)]="customer.Name">
+<br>
+<label>Customer Type</label>
+<input type="text" name="custType" id="custType" [(ngModel)]="customer.Type">
+<br>
+<label>Customer Contact</label>
+<input type="text" name="custContact" id="custContact" [(ngModel)]="customer.Contact">
+<input type="button" value="Add" (click)="addCustomer()">
+
+<br>
+<table class="table" width="100%" border="1">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Class</td>
+    </tr>
+    <tr *ngFor="let cust of customers">
+        <td>{{cust.Name}}</td>
+        <td>{{cust.Type}}</td>
+        <td>{{cust.Contact}}</td>
+    </tr>
+</table>
