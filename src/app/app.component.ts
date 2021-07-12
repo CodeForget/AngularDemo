@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import {Router}  from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'New Application';
+
+  constructor(private route:Router){
+
+  }
+
+  firstPage(){
+ this.route.navigate(['/']);
+  }
+
+  customerPage(){
+this.route.navigate(['/customer']);
+  }
 }
