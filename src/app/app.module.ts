@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { FirstComponent } from './first/first.component';
+import { EmployeeModule } from './employee/employee.module';
 
 @NgModule({
   declarations: [
